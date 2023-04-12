@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int angka = 10;
+   int *ptr = &angka; // ptr menunjuk ke variabel angka
+
+   cout << "Nilai dari angka adalah " << angka << endl;
+   cout << "Alamat memori dari angka adalah " << &angka << endl;
+   cout << "Nilai yang ditunjuk oleh pointer ptr adalah " << *ptr << endl;
+   cout << "Alamat memori yang ditunjuk oleh pointer ptr adalah " << ptr << endl;
+
+   // Mengubah nilai angka melalui pointer
+   *ptr = 20;
+   cout << "Nilai baru dari angka adalah " << angka << endl;
+
+   return 0;
+}
+
+output :
+Nilai dari angka adalah 10
+Alamat memori dari angka adalah 0x7ffeeeee378c
+Nilai yang ditunjuk oleh pointer ptr adalah 10
+Alamat memori yang ditunjuk oleh pointer ptr adalah 0x7ffeeeee378c
+Nilai baru dari angka adalah 20

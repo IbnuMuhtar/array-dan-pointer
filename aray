@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+void printArray(int arr[], int n) {
+    // Menampilkan setiap elemen pada array
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int n = 5; // jumlah elemen pada array
+    int arr[] = {4, 2, 1, 5, 3}; // array yang akan dikirim ke dalam fungsi
+
+    // Menampilkan elemen-elemen array sebelum dikirim ke dalam fungsi
+    cout << "Array sebelum dikirim ke dalam fungsi: ";
+    printArray(arr, n);
+
+    // Mengirimkan array ke dalam fungsi dan mengoperasikannya
+    for (int i = 0; i < n; i++) {
+        arr[i] *= 2;
+    }
+
+    // Menampilkan elemen-elemen array setelah dikirim ke dalam fungsi
+    cout << "Array setelah dikirim ke dalam fungsi: ";
+    printArray(arr, n);
+
+    return 0;
+}

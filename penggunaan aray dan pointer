@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n = 5; // jumlah elemen pada array
+    int arr[n] = {4, 2, 1, 5, 3}; // array dengan 5 elemen
+
+    // Deklarasi pointer
+    int *ptr;
+
+    // Mengatur pointer untuk menunjuk pada elemen pertama pada array
+    ptr = arr;
+
+    // Menampilkan setiap elemen pada array menggunakan pointer
+    cout << "Elemen-elemen pada array: ";
+    for (int i = 0; i < n; i++) {
+        cout << *ptr << " ";
+        ptr++; // pointer ditambah untuk menunjuk pada elemen berikutnya
+    }
+    cout << endl;
+
+    return 0;
+}

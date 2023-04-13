@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n = 5; // jumlah elemen pada array
+    int arr[n]; // deklarasi array dengan ukuran n
+    
+    // Memasukkan nilai pada elemen-elemen array menggunakan loop
+    for (int i = 0; i < n; i++) {
+        cout << "Masukkan nilai pada elemen ke-" << i+1 << ": ";
+        cin >> arr[i];
+    }
+
+    // Menampilkan elemen-elemen array
+    cout << "Elemen-elemen pada array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
